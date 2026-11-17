@@ -1,7 +1,7 @@
 [component]
 name = "SigmaOS-gpusched"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
 description = "GPU scheduling and resource management with task prioritization and preemption"
 upstream = []
@@ -11,6 +11,6 @@ provides = ["component"]
 depends_on = ["SigmaOS-drm-impl"]
 
 [maturity]
-status = "Scaffold"
+status = "Implemented"
 test_evidence = "Compiles and passes AAA unit tests"
 next_milestone = "Hardware and runtime integration"
