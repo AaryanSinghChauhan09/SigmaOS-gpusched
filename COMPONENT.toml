@@ -3,12 +3,12 @@ name = "SigmaOS-gpusched"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "gpusched component"
+description = "GPU scheduling and resource management with task prioritization and preemption"
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-drm-impl"]
 
 [maturity]
 status = "Scaffold"
