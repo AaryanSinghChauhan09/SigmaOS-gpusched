@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-gpusched Component Wiki
+# SigmaOS-gpusched Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-gpusched provides GPU scheduling and resource management with task prioritization and preemption for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-gpusched provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-gpusched Abstraction
-- Fail-Fast on SigmaOS-gpusched Initialization Errors
-- Deterministic SigmaOS-gpusched Setup
-- Clear Abstraction Over SigmaOS-gpusched APIs
-- Composition over Inheritance for SigmaOS-gpusched extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-gpusched Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-gpusched Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-gpusched Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-gpusched APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-gpusched extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-gpusched follows a SigmaOS-gpusched pattern:
+SigmaOS-gpusched follows a SigmaOS-gpusched pattern:
 - **SigmaOS-gpusched Core**: Provides SigmaOS-gpusched support, SigmaOS-gpusched management, and SigmaOS-gpusched tracking
 - **Management**: Supports SigmaOS-gpusched management, SigmaOS-gpusched configuration, and SigmaOS-gpusched lifecycle
 - **Tracking**: Supports SigmaOS-gpusched status, SigmaOS-gpusched tracking, and SigmaOS-gpusched lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-gpusched follows a SigmaOS-gpusched pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-gpusched by given configuration
--  - Register a SigmaOS-gpusched by given name
--  - Get SigmaOS-gpusched status and SigmaOS-gpusched availability
--  - Track SigmaOS-gpusched management and SigmaOS-gpusched tracking
+- Manage a SigmaOS-gpusched by given configuration
+- Register a SigmaOS-gpusched by given name
+- Get SigmaOS-gpusched status and SigmaOS-gpusched availability
+- Track SigmaOS-gpusched management and SigmaOS-gpusched tracking
 - Error types for SigmaOS-gpusched failure scenarios or unsupported SigmaOS-gpusched types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-gpusched init, SigmaOS-gpusched management)
 3. **Assert**: Verify the expected SigmaOS-gpusched results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-gpusched initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-gpusched failure scenarios
 - Unit tests provided for SigmaOS-gpusched management and configuration
